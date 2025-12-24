@@ -1,5 +1,11 @@
 # TechFlow Solutions - Gerenciamento de Logística Ágil
 
+## Como Executar
+1. Clone o repositório.
+2. Instale as dependências: `pip install pytest`.
+3. Execute o sistema: `python main.py`.
+4. Execute os testes: `pytest`.
+
 ## 1. Objetivo do Projeto
 Este sistema foi desenvolvido para uma startup de logística com o intuito de acompanhar o fluxo de trabalho em tempo real, priorizar tarefas críticas e monitorar o desempenho da equipe[cite: 7].
 
