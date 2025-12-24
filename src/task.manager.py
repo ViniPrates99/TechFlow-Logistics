@@ -21,3 +21,22 @@ class TaskManager:
     def get_all_tasks(self):
         """Retorna todas as tarefas cadastradas"""
         return self.tasks
+    # No arquivo src/task_manager.py
+
+    def create_task(self, title, priority="Média"):
+        """Adiciona uma nova tarefa com suporte a prioridade"""
+        if not title:
+            return "Erro: O título da tarefa é obrigatório."
+        
+        # A mudança de escopo: agora validamos se é uma entrega urgente
+        is_urgent = True if priority == "Alta" else False
+        
+        task = {
+            "id": len(self.tasks) + 1,
+            "title": title,
+            "priority": priority,
+            "urgent": is_urgent, # Novo campo da mudança de escopo
+            "status": "A Fazer"
+        }
+        self.tasks.append(task)
+        return task
