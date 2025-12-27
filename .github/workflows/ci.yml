@@ -21,5 +21,8 @@ jobs:
 
       - name: Executar Testes Automatizados
         run: |
-          export PYTHONPATH=$PYTHONPATH:$(pwd)
-          pytest src/tests/test_manager.py
+          - name: Executar Testes Automatizados
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: |
+          python -m pytest
