@@ -21,4 +21,4 @@ jobs:
 
       - name: Executar Testes Automatizados
         run: |
-          pytest tests/test_manager.py
+          pytest src/tests/test_manager.py
