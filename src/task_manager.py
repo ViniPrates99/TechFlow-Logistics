@@ -5,7 +5,7 @@ class TaskManager:
     def create_task(self, title, priority="Média"):
         """Cria uma nova tarefa (Create) """
         if not title:
-            return "Erro: O título é obrigatório."
+            return "Erro: O título da tarefa é obrigatório."
         task = {
             "id": len(self.tasks) + 1,
             "title": title,
